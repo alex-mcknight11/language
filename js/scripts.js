@@ -16,6 +16,8 @@ $(document).ready(function () {
 
     const date = $('#date').val();
 
+    const animal = $('#animal').val();
+
 		const favoriteColor = $('#color').val();
 		const colorResult = $('#colorResult').text(favoriteColor);
 
@@ -80,6 +82,16 @@ $(document).ready(function () {
 		} else if (date === 'pythonOption') {
 			pythonSum = pythonSum + 1;
 		} else if (date === 'wrenOption') {
+			wrenSum = wrenSum + 1;
+		}
+
+    if (animal === 'javascriptOption') {
+			javascriptSum = javascriptSum + 1;
+		} else if (animal === 'rubyOption') {
+			rubySum = rubySum + 1;
+		} else if (animal === 'pythonOption') {
+			pythonSum = pythonSum + 1;
+		} else if (animal === 'wrenOption') {
 			wrenSum = wrenSum + 1;
 		}
 
