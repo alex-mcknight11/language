@@ -1,12 +1,21 @@
-$(document).ready(function() {
-  $('#submitButton').submit(function  (event) {
-    event.preventDefault();
+$(document).ready(function () {
+	$('#submitButton').submit(function (event) {
+		event.preventDefault();
 
-    function submitForm() {
-      $('submitButton');
-    }
+		function submitForm() {
+			$('submitButton');
+		}
 
-    const movie = $('input:radio[name=movie]:checked').val();
+		const movie = $('input:radio[name=movie]:checked').val();
+
+		const wordAssociation = $('#wordAssociation').val();
+
+		const beach = $('input:radio[name=beach]:checked').val();
+
+		const eggs = $('#eggs').val();
+
+		const favoriteColor = $('#color').val();
+		const colorResult = $('#colorResult').text(favoriteColor);
 
 		let cSum = 0;
 		let javascriptSum = 0;
@@ -26,7 +35,7 @@ $(document).ready(function() {
 			wrenSum = wrenSum + 1;
 		}
 
-    if (wordAssociation === 'cOption') {
+		if (wordAssociation === 'cOption') {
 			cSum = cSum + 1;
 		} else if (wordAssociation === 'javascriptOption') {
 			javascriptSum = javascriptSum + 1;
