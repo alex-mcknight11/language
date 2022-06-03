@@ -65,7 +65,9 @@ $(document).ready(function () {
 			cSum = cSum + 1;
 		}
 
-		if (eggs === 'javascriptOption') {
+    if (eggs === 'cOption') {
+			cSum = cSum + 1;
+		} else if (eggs === 'javascriptOption') {
 			javascriptSum = javascriptSum + 1;
 		} else if (eggs === 'rubyOption') {
 			rubySum = rubySum + 1;
@@ -75,7 +77,9 @@ $(document).ready(function () {
 			wrenSum = wrenSum + 1;
 		}
 
-    if (date === 'javascriptOption') {
+    if (date === 'cOption') {
+			cSum = cSum + 1;
+    } else if (date === 'javascriptOption') {
 			javascriptSum = javascriptSum + 1;
 		} else if (date === 'rubyOption') {
 			rubySum = rubySum + 1;
@@ -85,7 +89,9 @@ $(document).ready(function () {
 			wrenSum = wrenSum + 1;
 		}
 
-    if (animal === 'javascriptOption') {
+    if (animal === 'cOption') {
+			cSum = cSum + 1;
+    } else if (animal === 'javascriptOption') {
 			javascriptSum = javascriptSum + 1;
 		} else if (animal === 'rubyOption') {
 			rubySum = rubySum + 1;
