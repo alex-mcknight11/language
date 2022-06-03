@@ -26,7 +26,19 @@ $(document).ready(function() {
 			wrenSum = wrenSum + 1;
 		}
 
-    if (
+    if (wordAssociation === 'cOption') {
+			cSum = cSum + 1;
+		} else if (wordAssociation === 'javascriptOption') {
+			javascriptSum = javascriptSum + 1;
+		} else if (wordAssociation === 'rubyOption') {
+			rubySum = rubySum + 1;
+		} else if (wordAssociation === 'pythonOption') {
+			pythonSum = pythonSum + 1;
+		} else if (wordAssociation === 'wrenOption') {
+			wrenSum = wrenSum + 1;
+		}
+
+		if (
 			cSum >= javascriptSum &&
 			cSum >= rubySum &&
 			cSum >= pythonSum &&
@@ -37,6 +49,50 @@ $(document).ready(function() {
 			$('rubyResult').hide();
 			$('pythonResult').hide();
 			$('wrenResult').hide();
-
-  });
+		} else if (
+			javascriptSum >= cSum &&
+			javascriptSum >= rubySum &&
+			javascriptSum >= pythonSum &&
+			javascriptSum >= wrenSum
+		) {
+			$('#javascriptResult').show();
+			$('cResult').hide();
+			$('rubyResult').hide();
+			$('pythonResult').hide();
+			$('wrenResult').hide();
+		} else if (
+			rubySum >= cSum &&
+			rubySum >= javascriptSum &&
+			rubySum >= pythonSum &&
+			rubySum >= wrenSum
+		) {
+			$('#rubyResult').show();
+			$('cResult').hide();
+			$('javascriptResult').hide();
+			$('pythonResult').hide();
+			$('wrenResult').hide();
+		} else if (
+			pythonSum >= cSum &&
+			pythonSum >= javascriptSum &&
+			pythonSum >= rubySum &&
+			pythonSum >= wrenSum
+		) {
+			$('#pythonResult').show();
+			$('javascriptResult').hide();
+			$('cResult').hide();
+			$('rubyResult').hide();
+			$('wrenResult').hide();
+		} else if (
+			wrenSum >= cSum &&
+			wrenSum >= javascriptSum &&
+			wrenSum >= rubySum &&
+			wrenSum >= pythonSum
+		) {
+			$('#wrenResult').show();
+			$('cResult').hide();
+			$('javascriptResult').hide();
+			$('pythonResult').hide();
+			$('rubyResult').hide();
+		}
+	});
 });
