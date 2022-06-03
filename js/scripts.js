@@ -52,6 +52,16 @@ $(document).ready(function() {
 			cSum = cSum + 1;
 		}
 
+		if (eggs === 'javascriptOption') {
+			javascriptSum = javascriptSum + 1;
+		} else if (eggs === 'rubyOption') {
+			rubySum = rubySum + 1;
+		} else if (eggs === 'pythonOption') {
+			pythonSum = pythonSum + 1;
+		} else if (eggs === 'wrenOption') {
+			wrenSum = wrenSum + 1;
+		}
+
 		if (
 			cSum >= javascriptSum &&
 			cSum >= rubySum &&
