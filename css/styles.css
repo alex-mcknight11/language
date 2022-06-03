@@ -11,18 +11,7 @@ body {
 	color: white;
 }
 
-h1 {
-	color: white;
-}
-
-h2 {
-	color: white;
-}
-
-h3 {
-	color: white;
-}
-
-p {
-	color: white;
+lightMode {
+  background-color: white;
+  color: black;
 }
