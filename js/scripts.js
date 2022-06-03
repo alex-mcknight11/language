@@ -14,6 +14,8 @@ $(document).ready(function () {
 
 		const eggs = $('#eggs').val();
 
+    const date = $('#date').val();
+
 		const favoriteColor = $('#color').val();
 		const colorResult = $('#colorResult').text(favoriteColor);
 
@@ -68,6 +70,16 @@ $(document).ready(function () {
 		} else if (eggs === 'pythonOption') {
 			pythonSum = pythonSum + 1;
 		} else if (eggs === 'wrenOption') {
+			wrenSum = wrenSum + 1;
+		}
+
+    if (date === 'javascriptOption') {
+			javascriptSum = javascriptSum + 1;
+		} else if (date === 'rubyOption') {
+			rubySum = rubySum + 1;
+		} else if (date === 'pythonOption') {
+			pythonSum = pythonSum + 1;
+		} else if (date === 'wrenOption') {
 			wrenSum = wrenSum + 1;
 		}
 
