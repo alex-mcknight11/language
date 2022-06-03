@@ -38,6 +38,20 @@ $(document).ready(function() {
 			wrenSum = wrenSum + 1;
 		}
 
+		if (beach === 'cOption') {
+			cSum = cSum + 1;
+		} else if (beach === 'javascriptOption') {
+			javascriptSum = javascriptSum + 1;
+		} else if (beach === 'rubyOption') {
+			rubySum = rubySum + 1;
+		} else if (beach === 'pythonOption') {
+			pythonSum = pythonSum + 1;
+		} else if (beach === 'wrenOption') {
+			wrenSum = wrenSum + 1;
+		} else if (beach === 'cOption') {
+			cSum = cSum + 1;
+		}
+
 		if (
 			cSum >= javascriptSum &&
 			cSum >= rubySum &&
